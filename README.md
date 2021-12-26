@@ -4,11 +4,6 @@ Integration of single-cell chromatin accessibility and gene expression data via 
 # Requirements
 ###
 * numpy
-* scipy
-* pandas
-* scikit-learn
-* scanpy
-* anndata
 * pytorch
 
 # Tutorial
