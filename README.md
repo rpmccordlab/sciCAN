@@ -9,9 +9,6 @@ Integration of single-cell chromatin accessibility and gene expression data via 
 # Tutorial
 
 ### For quick start
-    ##A processed scRNA-seq/scATAC-seq can be found at 
-    ##https://figshare.com/articles/dataset/Mouse_skin_data_by_SHARE-seq/16620367
-    
     ##rna_X: RNA-seq data; dna_X: ATAC-seq data
     ##Both rna_X and dna_X are matrices in which each row represents one cell while each column stands for a gene
     ##rna_X and dna_X don't have to have the same number of cells
