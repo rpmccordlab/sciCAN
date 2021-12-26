@@ -21,8 +21,11 @@ Integration of single-cell chromatin accessibility and gene expression data via 
     ##rna_X as input for source_trainset while dna_X as input for target_trainset
     
     ##Integration via sciCAN
+    import torch
+    import torch.nn.functional as F
     from sciCAN.network import *
     from sciCAN.training import *
+    
     FeatureExtractor = Cycle_train_wolabel(epoch=100, batch_size=1024, source_trainset=rna_X, target_trainset=dna_X)
     
     ##Visualization integration outcome
