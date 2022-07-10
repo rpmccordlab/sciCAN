@@ -240,38 +240,3 @@ def Cycle_train_wolabel(epoch=50, batch_size=512,source_trainset=None, target_tr
         gc.collect()
         
     return encoder
-
-'''
-def iterate_train(epoch=50, batch_size=512,source_trainset=None, target_trainset=None):
-    FeatureExtractor= Cycle_train_wolabel(epoch=epoch, batch_size=batch_size,
-                                          source_trainset=source_trainset, 
-                                          target_trainset=target_trainset,encoder=None)
-    
-    FeatureExtractor= Cycle_train_wolabel(epoch=epoch, batch_size=batch_size,
-                                          source_trainset=target_trainset, 
-                                          target_trainset=source_trainset,
-                                          encoder=FeatureExtractor)
-    
-    FeatureExtractor= Cycle_train_wolabel(epoch=epoch, batch_size=batch_size,
-                                          source_trainset=source_trainset, 
-                                          target_trainset=target_trainset,
-                                          encoder=FeatureExtractor)
-    
-    FeatureExtractor= Cycle_train_wolabel(epoch=epoch, batch_size=batch_size,
-                                          source_trainset=target_trainset, 
-                                          target_trainset=source_trainset,
-                                          encoder=FeatureExtractor)
-    return FeatureExtractor
-
-def iterate_trainV2(epoch=100, batch_size=512,source_trainset=None, target_trainset=None):
-    FeatureExtractor= Cycle_train_wolabel(epoch=epoch, batch_size=batch_size,
-                                          source_trainset=source_trainset, 
-                                          target_trainset=target_trainset,encoder=None)
-    
-    FeatureExtractor= Cycle_train_wolabel(epoch=int(epoch/2), batch_size=batch_size,
-                                          source_trainset=target_trainset, 
-                                          target_trainset=source_trainset,
-                                          encoder=FeatureExtractor)
-    
-    return FeatureExtractor
-'''
